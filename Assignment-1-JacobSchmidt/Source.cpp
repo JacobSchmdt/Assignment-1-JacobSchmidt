@@ -10,7 +10,7 @@ int main()
     cout << "Enter a number: ";
     cin >> Rnum;
     Rnum = (int)Rnum;
-
+    //Math for determining values and placing them in order
     m = Rnum / 1000;
     d = ((Rnum % 1000) / 500);
     c = ((Rnum % 500) / 100);
@@ -19,7 +19,7 @@ int main()
     v = ((Rnum % 10) / 5);
     i = (Rnum % 5);
     n = m + d + c + l + x + v + i;
-
+    //while loop for determining if a interger is a valid value
     while (n > 0) {
         if (Rnum >= 4000) {
             cout << "error";
